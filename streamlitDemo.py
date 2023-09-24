@@ -28,7 +28,7 @@ local_file_name, dataset_url, site_url = createCredential.detailsCredential(data
 
 if st.button("Click here to submit"):
     try:
-        st.caption(":blue[Status . . .]")
+        st.caption(":blue[Status]")
         with st.status("Downloading data . . .", expanded=True) as status:
             st.caption(":red[Searching for data . . .]")
             time.sleep(2)
