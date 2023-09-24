@@ -28,11 +28,12 @@ local_file_name, dataset_url, site_url = createCredential.detailsCredential(data
 
 if st.button("Click here to submit"):
     try:
+        st.caption(":blue[Status . . .]")
         with st.status("Downloading data . . .", expanded=True) as status:
-            st.caption(":blue[Searching for data . . .]")
+            st.caption(":red[Searching for data . . .]")
             time.sleep(2)
             response = sharePointToLocalSystem.SaveLocalSystem(client_id, client_secret, site_url, dataset_url)
-            st.caption(":red[Found URL !]")
+            st.caption(":blue[Found URL !]")
             time.sleep(1)
             st.caption(":green[Downloading data . . .]")
             time.sleep(1)
