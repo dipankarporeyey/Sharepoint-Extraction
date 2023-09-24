@@ -1,5 +1,4 @@
 import time
-# import numpy as np
 from SharePointToLocalSystem import sharePointToLocalSystem
 from CreateCredential import createCredential
 import streamlit as st
