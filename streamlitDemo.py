@@ -41,6 +41,7 @@ if st.button("Click here to submit"):
             status.update(label="Download complete!", state="complete", expanded=True)
         col1, col2 = st.columns(2)
         with col1:
+            local_file_name = local_file_name.replace("%20"," ")
             st.caption(":blue[Received file name:]  "+str(local_file_name))
         with col2:
             st.download_button(label="Click here to download!",
